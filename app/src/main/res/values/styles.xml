@@ -1,0 +1,14 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar" />
+    <style parent="@android:style/Widget.Spinner" name="SpinnerAsEditText">
+        <item name="android:background">@drawable/border </item>
+    </style>
+    <style parent="@android:style/Widget.Spinner" name="SpinnerAsEditTextMes">
+        <item name="android:background">@drawable/borderlines </item>
+    </style>
+    <style name="MyRadioButton" parent="Theme.AppCompat.Light">
+
+        <item name="colorControlActivated">@color/teal</item>
+    </style>
+</resources>

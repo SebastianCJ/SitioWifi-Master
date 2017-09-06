@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tituloalert"
+        android:background="@drawable/titulo_alert_gris"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtTituloAlert"
+            android:textColor="#555555"
+            android:textStyle="bold"
+            android:textSize="14sp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/contenidoalert"
+        android:background="@drawable/contenido_alert"
+        android:layout_below="@+id/tituloalert"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtContenidoAlert"
+            android:textColor="#212121"
+            android:textSize="10sp"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/txtValorAlert"
+            android:textColor="#212121"
+            android:textSize="12sp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txtContenidoAlert"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layoutBotones"
+            android:layout_below="@id/txtValorAlert"
+            android:layout_marginTop="20dp">
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ACEPTAR"
+                android:id="@+id/btnPrimero"
+                android:textSize="10sp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/blue_button_flat"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CANCELAR"
+                android:id="@+id/btnSegundo"
+                android:textSize="10sp"
+                android:textColor="#212121"
+                android:background="@drawable/grey_button_flat"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TERMINAR"
+                android:id="@+id/btnTercero"
+                android:textSize="10sp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/red_button_flat"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true">
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/loginbg2"
+        android:scaleType = "centerCrop"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:src="@mipmap/logo"
+        android:id="@+id/imageLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="115dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentEnd="true" />
+
+
+
+    <TextView android:id="@+id/registro"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/registro"
+        android:gravity="center"
+        android:textSize="16dip"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/imageLogo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="12dip"
+        android:inputType="text"
+        android:id="@+id/nombreTxt"
+        android:hint="@string/nombre"
+        android:enabled="true"
+        android:textColor="@color/gray"
+        android:textColorHint="@color/gray"
+        android:layout_below="@+id/registro"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/leftroundborder"
+        android:drawableRight="@mipmap/iconnombre"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="12dip"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/emailTxtR"
+        android:hint="@string/correo"
+        android:enabled="true"
+        android:textColor="@color/gray"
+        android:textColorHint="@color/gray"
+        android:layout_below="@+id/nombreTxt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/borderlines"
+        android:drawableRight="@mipmap/iconcorreo"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="12dip"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/passwordTxtR"
+        android:hint="@string/contrasena"
+        android:textColor="@color/gray"
+        android:textColorHint="@color/gray"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/emailTxtR"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/borderlines"
+        android:drawableRight="@mipmap/iconpassword"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/spinnerMes"
+        android:spinnerMode="dropdown"
+        style="@style/SpinnerAsEditTextMes"
+        android:paddingRight="8dp"
+        android:paddingLeft="8dp"
+        android:layout_above="@+id/spinner1"
+        android:layout_alignLeft="@+id/spinner1"
+        android:layout_alignStart="@+id/spinner1" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/fechaTxt"
+        android:spinnerMode="dropdown"
+        style="@style/SpinnerAsEditTextMes"
+        android:paddingRight="8dp"
+        android:paddingLeft="8dp"
+        android:layout_alignTop="@+id/fechaTxt2"
+        android:layout_toRightOf="@+id/spinnerMes"
+        android:drawableRight="@mipmap/iconnacimiento"
+        android:layout_toEndOf="@+id/spinnerMes"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/fechaTxt2"
+        android:spinnerMode="dropdown"
+        style="@style/SpinnerAsEditTextMes"
+        android:paddingRight="8dp"
+        android:paddingLeft="8dp"
+        android:layout_toRightOf="@+id/fechaTxt"
+        android:layout_below="@+id/passwordTxtR"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="15dp"/>
+
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/spinner1"
+        android:spinnerMode="dropdown"
+        android:prompt="@string/country_prompt"
+        style="@style/SpinnerAsEditText"
+        android:layout_below="@+id/fechaTxt"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:drawableRight="@mipmap/icongenero"
+        android:paddingRight="8dp"
+        android:paddingLeft="8dp"
+        android:layout_marginBottom="15dp"
+        />
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_registrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:text="@string/registrarse"
+        android:background="#009739"
+        android:textAllCaps="false"
+        android:layout_below="@+id/spinner1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:drawableLeft="@mipmap/iconregistro"
+        android:textAlignment="gravity"
+        android:elegantTextHeight="false" />
+
+
+    <TextView android:id="@+id/txtSeparator"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/osi_prefieres"
+        android:gravity="center"
+        android:textSize="16dip"
+        android:layout_below="@+id/btn_registrar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_fbReg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:background="#3b5998"
+        android:text="@string/registrarseFB"
+        android:layout_below="@+id/txtSeparator"
+        android:textAlignment="center"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:drawableLeft="@mipmap/iconfacebook" />
+
+    <TextView android:id="@+id/cuentaText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tienes_cuenta"
+        android:gravity="center"
+        android:textSize="16dip"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_below="@+id/btn_fbReg"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+
+
+</RelativeLayout>

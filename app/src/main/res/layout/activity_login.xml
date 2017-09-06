@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true">
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/loginbg2"
+        android:scaleType = "centerCrop"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:src="@mipmap/logo"
+        android:id="@+id/imageLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="125dp"
+        android:layout_marginTop="25dp"/>
+
+
+
+        <TextView android:id="@+id/iniciarSesion"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/iniciar_sesion"
+            android:gravity="center"
+            android:textSize="16dip"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_below="@+id/imageLogo"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="12dip"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/emailTxt"
+            android:hint="@string/correo"
+            android:enabled="true"
+            android:textColor="@color/gray"
+            android:textColorHint="@color/gray"
+            android:layout_below="@+id/iniciarSesion"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/leftroundborder"
+            android:drawableRight="@mipmap/iconcorreo"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="12dip"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/passwordTxt"
+            android:hint="@string/contrasena"
+            android:textColor="@color/gray"
+            android:textColorHint="@color/gray"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/emailTxt"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/border"
+            android:drawableRight="@mipmap/iconpassword"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/iniciar_sesion"
+            android:background="#009739"
+            android:textAllCaps="false"
+            android:layout_below="@+id/passwordTxt"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:drawableLeft="@mipmap/iconlogin"
+
+            android:elegantTextHeight="false" />
+
+
+        <TextView android:id="@+id/txtSeparator"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/osi_prefieres"
+            android:gravity="center"
+            android:textSize="16dip"
+            android:layout_below="@+id/btn_login"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="16dp"
+            android:textAlignment="center" />
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_fb"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:background="#3b5998"
+            android:text="@string/iniciar_sesionFB"
+            android:layout_below="@+id/txtSeparator"
+            android:textAlignment="center"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="16dp"
+            android:textAllCaps="false"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:drawableLeft="@mipmap/iconfacebook" />
+
+        <TextView android:id="@+id/contrasenaText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/olvidar_contrasena"
+            android:gravity="center"
+            android:textSize="16dip"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_below="@+id/btn_fb"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+
+            />
+
+        <TextView android:id="@+id/registrate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/registrate"
+            android:gravity="center"
+            android:textSize="16dip"
+            android:layout_below="@+id/contrasenaText"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+             />
+
+</RelativeLayout>

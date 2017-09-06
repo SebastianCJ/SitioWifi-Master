@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_weight="0.06"
+        android:background="#009739"
+        android:weightSum="1"
+        android:id="@+id/linear">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Nombre de la Ubicacion"
+            android:id="@+id/titulo_encuesta"
+            android:layout_weight="0.57"
+            android:textSize="16dip"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/linear2"
+    android:layout_below="@id/linear">
+
+    <TextView android:id="@+id/pregunta1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Calzada Cortez No. 1477-7. Col. Independencia Ensenada Baja California"
+        android:textColor="@color/black"
+        android:textSize="16dip"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="15dp"
+        android:visibility="invisible"/>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pregunta1"
+        android:id="@+id/radioGroup1"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Si"
+            android:textColor="@color/black"
+            android:id="@+id/radioButton11"
+            android:theme="@style/MyRadioButton"
+            android:layout_marginLeft="15dp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:textColor="@color/black"
+            android:theme="@style/MyRadioButton"
+            android:id="@+id/radioButton12"
+            android:layout_marginLeft="15dp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No se"
+            android:textColor="@color/black"
+            android:theme="@style/MyRadioButton"
+            android:id="@+id/radioButton13"
+            android:layout_marginLeft="15dp"/>
+    </RadioGroup>
+
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear3"
+        android:layout_below="@id/linear2">
+
+        <TextView android:id="@+id/pregunta2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Calzada Cortez No. 1477-7. Col. Independencia Ensenada Baja California"
+            android:textColor="@color/black"
+            android:textSize="16dip"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="15dp"
+            android:visibility="invisible"/>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pregunta2"
+            android:id="@+id/radioGroup2"
+            android:theme="@style/MyRadioButton"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Si"
+            android:textColor="@color/black"
+            android:id="@+id/radioButton21"
+            android:theme="@style/MyRadioButton"
+            android:layout_marginLeft="15dp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:textColor="@color/black"
+            android:id="@+id/radioButton22"
+            android:theme="@style/MyRadioButton"
+            android:layout_marginLeft="15dp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No se"
+            android:textColor="@color/black"
+            android:theme="@style/MyRadioButton"
+            android:id="@+id/radioButton23"
+            android:layout_marginLeft="15dp"/>
+
+        </RadioGroup>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear4"
+        android:layout_below="@id/linear3">
+
+        <TextView android:id="@+id/pregunta3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Calzada Cortez No. 1477-7. Col. Independencia Ensenada Baja California"
+            android:textColor="@color/black"
+            android:textSize="16dip"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="15dp"
+            android:visibility="invisible"/>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pregunta3"
+            android:id="@+id/radioGroup3"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Si"
+                android:textColor="@color/black"
+                android:theme="@style/MyRadioButton"
+                android:id="@+id/radioButton31"
+                android:layout_marginLeft="15dp" />
+
+            <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:textColor="@color/black"
+            android:id="@+id/radioButton32"
+                android:theme="@style/MyRadioButton"
+            android:layout_marginLeft="15dp"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No se"
+                android:textColor="@color/black"
+                android:theme="@style/MyRadioButton"
+                android:id="@+id/radioButton33"
+                android:layout_marginLeft="15dp"/>
+
+
+        </RadioGroup>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linear5"
+            android:layout_below="@id/linear4">
+        <TextView android:id="@+id/pregunta4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Calzada Cortez No. 1477-7. Col. Independencia Ensenada Baja California"
+            android:textColor="@color/black"
+            android:textSize="16dip"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="15dp"
+            android:visibility="invisible"/>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pregunta4"
+            android:id="@+id/radioGroup4"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Si"
+                android:textColor="@color/black"
+                android:theme="@style/MyRadioButton"
+                android:id="@+id/radioButton41"
+                android:layout_marginLeft="15dp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textColor="@color/black"
+                android:id="@+id/radioButton42"
+                android:theme="@style/MyRadioButton"
+                android:layout_marginLeft="15dp"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No se"
+                android:textColor="@color/black"
+                android:theme="@style/MyRadioButton"
+                android:id="@+id/radioButton43"
+                android:layout_marginLeft="15dp"/>
+
+
+        </RadioGroup>
+            </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linear6"
+            android:layout_below="@id/linear5">
+        <TextView android:id="@+id/pregunta5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Calzada Cortez No. 1477-7. Col. Independencia Ensenada Baja California"
+            android:textColor="@color/black"
+            android:textSize="16dip"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="15dp"
+            android:visibility="invisible"
+           />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pregunta5"
+            android:id="@+id/radioGroup5"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Si"
+                android:textColor="@color/black"
+                android:theme="@style/MyRadioButton"
+                android:id="@+id/radioButton51"
+                android:layout_marginLeft="15dp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textColor="@color/black"
+                android:id="@+id/radioButton52"
+                android:theme="@style/MyRadioButton"
+                android:layout_marginLeft="15dp"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No se"
+                android:textColor="@color/black"
+                android:theme="@style/MyRadioButton"
+                android:id="@+id/radioButton53"
+                android:layout_marginLeft="15dp"/>
+
+
+        </RadioGroup>
+            </RelativeLayout>
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_regresarEncuesta"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="0dp"
+        android:background="@color/black"
+        android:text="Enviar"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+
+
+</RelativeLayout>

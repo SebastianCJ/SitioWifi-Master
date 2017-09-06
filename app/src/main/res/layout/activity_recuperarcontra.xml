@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true">
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/loginbg2"
+        android:scaleType = "centerCrop"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:src="@mipmap/logo"
+        android:id="@+id/imageLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="125dp"
+        android:layout_marginTop="25dp"/>
+
+
+
+    <TextView android:id="@+id/iniciarSesion"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/recuperar_contra"
+        android:gravity="center"
+        android:textSize="16dip"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_below="@+id/imageLogo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="15dp"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="12dip"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/emailTxt"
+        android:hint="@string/correo"
+        android:enabled="true"
+        android:textColor="@color/gray"
+        android:textColorHint="@color/gray"
+        android:layout_below="@+id/iniciarSesion"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/fullborder"
+        android:drawableRight="@drawable/ic_action_search"
+
+        android:paddingLeft="15dp" />
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_recuperar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="0dp"
+        android:text="@string/enviar_contra"
+        android:background="#009739"
+        android:textAllCaps="false"
+        android:layout_below="@+id/emailTxt"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:drawableLeft="@mipmap/iconcorreobtn"
+        android:textAlignment="gravity"
+        android:clickable="false"
+        android:layout_marginTop="15dp"
+        android:elegantTextHeight="false" />
+
+
+
+    <TextView android:id="@+id/cuentaText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tienes_cuenta"
+        android:gravity="center"
+        android:textSize="16dip"
+        android:layout_below="@+id/btn_recuperar"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <TextView android:id="@+id/registrate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/registrate"
+        android:gravity="center"
+        android:textSize="16dip"
+        android:layout_below="@+id/cuentaText"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+</RelativeLayout>

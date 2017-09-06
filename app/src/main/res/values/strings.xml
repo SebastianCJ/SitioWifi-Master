@@ -1,0 +1,46 @@
+<resources>
+
+    <string name="app_name">SitioWifi</string>
+    <string name="fechaN">Fecha de Nacimiento ej. 1990/04/21</string>
+    <string name="menu_settings">Ajustes</string>
+    <string name="title_activity_main">AR</string>
+    <string name="logo">Logo</string>
+    <string name="nombre">Nombre Completo</string>
+    <string name="recuperar_contra">Recuperar Contraseña</string>
+    <string name="registro">Registro</string>
+    <string name="olvidar_contrasena">¿Olvidaste tu Contraseña?</string>
+    <string name="enviar_contra">Enviar Contraseña</string>
+    <string name="registrate">¿No tienes cuenta? Regístrate ahora</string>
+    <string name="osi_prefieres">o si lo prefieres, puedes</string>
+    <string name="correo">   Correo Electrónico</string>
+    <string name="contrasena">  Contraseña</string>
+    <string name="iniciar_sesion"> Iniciar Sesión</string>
+    <string name="iniciar_sesionFB">Iniciar Sesión con Facebook</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="registrarseFB">Registrarte con Facebook</string>
+    <string name="tienes_cuenta">¿Ya tienes cuenta? Inicia Sesión</string>
+    <string name="genero">Género  H/M</string>
+    <string name="regresar">Regresar</string>
+    <string name="title_activity_maps">SitioWiFi</string>
+    <string name="camara">Utilizar cámara para detectar sitios WiFi</string>
+    <string name="ARcamara">Utilizar mapa para detectar sitios WiFi</string>
+    <string name="ing_direccion">Ingresar Dirección</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="action_websearch">Web search</string>
+    <string name="app_not_available">Sorry, there\'s no web browser available</string>
+    <string name="logoname">logo</string>
+    <string name="country_prompt">Género</string>
+    <string name="picture">Picture</string>
+    <string name="description_info">Info</string>
+    <string name="request_permission">This sample needs camera permission.</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="intro_message">This device doesn\'t support Camera2 API.</string>
+    <string-array name="country_arrays">
+        <item>M</item>
+        <item>H</item>
+    </string-array>
+    <string name="facebook_app_id">714600825383444</string>
+    <string name="fb_login_protocol_scheme">fb518262088371101</string>
+</resources>
+

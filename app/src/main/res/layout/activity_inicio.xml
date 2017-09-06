@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true">
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/loginbg3"
+        android:scaleType = "centerCrop" />
+
+    <ImageView
+        android:src="@drawable/logo"
+        android:id="@+id/imageLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="125dp"
+        android:layout_marginTop="25dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        android:baselineAligned="false">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/IniciarSesionH"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/iniciar_sesion"
+                android:background="#3b5998"
+                android:paddingBottom="5dp"
+                android:textAllCaps="false" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/Registrarse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/registrarse"
+                android:background="#009739"
+                android:paddingBottom="5dp"
+                android:textAllCaps="false"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
